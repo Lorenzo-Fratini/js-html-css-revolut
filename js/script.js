@@ -13,7 +13,7 @@ function domControl() {
 }
 
 function dropDisplay() {
-  $('li').mouseover(function(){
+  $('.drop').mouseover(function(){
     
     var dropdown = $('li').find('.dropdown');
     var activeDrop = $(this).find('.dropdown');
