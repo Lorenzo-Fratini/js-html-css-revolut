@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 15px;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+a:hover {
+  color: #000;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 0 10%;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 20px;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin-right: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.head-cont-1,
+.head-cont-2 {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.head-cont-1 {
+  width: 15%;
+  align-items: center;
+}
+
+.head-cont-1 ul {
+  width: 60%;
+}
+
+.head-cont-2 {
+  width: 55%;
+  align-items: center;
+}
+
+.head-cont-2 ul:nth-child(2) {
+  width: 45%;
+}
+
+li.active a {
+  color: #000;
+}
+
+li.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 40px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.sign-btn {
+  width: 100px;
+  background-color: #eee;
+  color: #000;
+}
+
+.app-btn {
+  width: 130px;
+  background-color: #000;
+  color: #fff;
+}
+
+.sign-btn a {
+  color: #000;
+}
+
+.app-btn a {
+  color: #fff;
+}
+
+.dropdown {
+  width: 150px;
+  height: 500px;
+  background-color: black;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown.show {
+  display: block;
+}
