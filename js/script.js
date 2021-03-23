@@ -1,7 +1,7 @@
 function dropErase() {
   $(document).click(function(){
 
-    $('li').find('.dropdown').removeClass('show');
+    $('.droppable').find('.dropdown').removeClass('show');
 
   });
 }
@@ -13,9 +13,9 @@ function domControl() {
 }
 
 function dropDisplay() {
-  $('.drop').mouseover(function(){
+  $('.droppable').mouseover(function(){
     
-    var dropdown = $('li').find('.dropdown');
+    var dropdown = $('.droppable').find('.dropdown');
     var activeDrop = $(this).find('.dropdown');
 
     dropdown.removeClass('show');
