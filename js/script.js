@@ -1,6 +1,14 @@
 function dropErase() {
   $(document).click(function(){
+
     $('li').find('.dropdown').removeClass('show');
+
+  });
+}
+
+function domControl() {
+  $('.dropdown').click(function(dropErase) {
+    dropErase.stopPropagation();
   });
 }
 
@@ -17,6 +25,7 @@ function dropDisplay() {
 
 function init() {
 
+  domControl()
   dropErase()
   dropDisplay();
 }
