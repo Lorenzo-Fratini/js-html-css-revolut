@@ -1,33 +1,28 @@
 function dropErase() {
-  $(document).click(function(){
 
     $('.droppable').find('.dropdown').removeClass('show');
-
-  });
 }
 
 function domControl() {
-  $('.dropdown').click(function(dropErase) {
-    dropErase.stopPropagation();
+  $('.dropdown').click(function(event) {
+    event.stopPropagation();
   });
 }
 
 function dropDisplay() {
-  $('.droppable').mouseover(function(){
     
-    var dropdown = $('.droppable').find('.dropdown');
-    var activeDrop = $(this).find('.dropdown');
+  var dropdown = $('.droppable').find('.dropdown');
+  var activeDrop = $(this).find('.dropdown');
 
-    dropdown.removeClass('show');
-    activeDrop.addClass('show');
-  });
+  dropdown.removeClass('show');
+  activeDrop.addClass('show');
 }
 
 function init() {
 
   domControl()
-  dropErase()
-  dropDisplay();
+  $(document).click(dropErase);
+  $('.droppable').mouseover(dropDisplay);
 }
 
 $(document).ready(init);
